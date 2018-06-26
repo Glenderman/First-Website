@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<title>Wes Anderson: Newsletter</title>
+<!--This is the name that appears in the tab on the user's browser-->
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<!--This links this sheet to the external CSS styling sheet-->
+</head>
+<script>
+
+	function checkform () {
+	<!--Checking the email format using a reg expressions-->
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	<!--Stores the value from the user input-->
+	var email = document.getElementById('email').value;
+	
+		if (mailformat.test(email) == false) {
+			alert('Please Enter a correct Email Address');
+			return false;
+		}
+		
+	}
+	
+</script>
+
+<body>
+<div class="page">
+  <div align="center"> <!--Aligns what is inside this div into the center of the page-->
+    <h1>Contact Us</h1>
+  </div>
+  <ul id="navigation">
+    <li><a href="index.html">Home</a></li>
+    <!--Links to the other page in the navigation bar, class="on" meaning that this link is what the current page is on-->
+    <li><a href="symmetry.html">Symmetry</a></li>
+    <li><a href="newsletter.html" class="on">Newsletter</a></li>
+  </ul>
+  <p><br>
+    If you would like to subscribe to us for a newsletter, then submit your email and we will send you a monthly email about our man Wes. <br>
+  </p>
+  <!--Once validated, the form takes you to the newsletter complete page-->
+  <div align="center">
+    <form method="post" action="newslettercomplete.html" onSubmit="return checkform()">
+      <label>Email
+        <input type="text" id="email" name="email" size="40"> <!--The size is the size of the input box-->
+      </label>
+      <p>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Clear"/>
+        </fieldset>
+    </form>
+  </div>
+</div>
+</body>
+</html>

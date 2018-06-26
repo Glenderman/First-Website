@@ -1,0 +1,63 @@
+﻿body{
+	font-size: 85%;
+	font-family:"Archer", sans-serif;
+	letter-spacing: 0.12em;
+	background-color: #F0DAE5;
+}
+/*Body is the area outside of the black box, nothing is in this area*/
+
+.picture, #slide{
+	border:3px ridge #51243E;
+}
+/*Any picture that is added into the website receives this tag, taking on the characteristics*/
+/*The slide ID is added since the slideshow wouldn't work with the .picture class tag*/
+
+.page{
+	max-width:700px;
+	min-width:700px;
+	margin: 10px auto 10px auto;
+	padding:10px;
+	border: 4px groove #7599D9;
+	background-color: #E6A0C4;
+}
+/*The area inside of the box with the blue border*/
+
+ul{
+	width: 570px;
+	padding: 15px;
+	margin: 0px auto 0px auto;
+	border-top: 5px groove #E6A0C4;
+	border-bottom: 5px groove #E6A0C4;
+	text-align: center;
+}
+/*This is the navigation bar*/
+
+li{
+	display: inline;
+	margin: 0px 3px;
+    border-right:solid 2px black;
+}
+/*The actual links inside the navigation bar are edited with this*/
+
+p{
+    text-align:center;
+	width: 600px;
+	margin: 20px auto 20px auto;
+	font-weight:normal;
+}
+/*The main text is justified with this*/
+
+a{
+	color:#000000;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding: 6px 18px 5px 18px;
+}
+/*This is how the links in the navigation bar behave when the cursor is not on them*/
+
+a:hover, a.on{
+	color: brown;
+	background-color: none;
+	opacity: 1;
+}
+/*The links again when they are hovered over by the mouse, or when a link is active*/
